@@ -3,13 +3,11 @@ package com.example.quizapp
 import android.content.DialogInterface
 import android.os.Build
 import android.os.Bundle
-import android.view.View
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -18,12 +16,6 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
-
-//        var dateFormatter = DateTimeFormatter.ofPattern("yyyy MM dd hh:mm:ss")
-//        var currentDateValue = currentDate.format(dateFormatter)
-
 
         submit.setOnClickListener{
             println("inside submit")
